@@ -1,0 +1,16 @@
+x = 232
+        
+if(x < 0):
+    print(0)
+    
+else:
+    target = 0
+    a=0
+    x=str(x)
+    for i in range (len(x)-1,-1,-1):
+        target =target + (int(x[i]) * 10**a)
+        a+=1
+    if(target == x):
+        print(1)
+    else:
+        print(0)
